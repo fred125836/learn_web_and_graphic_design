@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 # find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="Hello World", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Hello World", page_icon=":tada:")
 
 
 
