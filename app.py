@@ -80,7 +80,6 @@ st.write("Current year:", current_time)
 
 # ---- CONTACT ----
 with st.container():
-    st.write("---")
     st.header("Get in touch with me")
     st.write("##")
 
