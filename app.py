@@ -63,6 +63,7 @@ with st.container():
         )
 
 with st.container():
+    st.write("---")
     st.subheader("TRY THIS OUT :smile:")
     st.title("CHECK YOUR DATE OF BIRTH :baby:")
     current_time = datetime.now().year
