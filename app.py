@@ -28,7 +28,7 @@ with st.container():
     st.title("I am a Typist, Graphic Designer, and Forex Enthusiast from Nigeria")
     st.write("I am passionate about Web Development")
     st.write("you are welcome to my page")
-    st.write("[contact me on whatsapp >](https://wa.me/message/CL576QP54YBPP1)")
+    st.button("[contact me on whatsapp >](https://wa.me/message/CL576QP54YBPP1)")
 
 # ---- PROJECTS ----
 with st.container():
