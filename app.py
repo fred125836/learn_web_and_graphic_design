@@ -1,6 +1,7 @@
 from PIL import Image
 import streamlit as st
 from datetime import datetime
+import webbrowser
 
 
 
@@ -28,6 +29,8 @@ with st.container():
     st.title("I am a Typist, Graphic Designer, and Forex Enthusiast from Nigeria")
     st.write("I am passionate about Web Development")
     st.write("you are welcome to my page")
+    if st.button("contact me on whatsapp"):
+    webbrowser.open_new_tab("https://wa.me/message/CL576QP54YBPP1")
     st.button("[contact me on whatsapp >](https://wa.me/message/CL576QP54YBPP1)")
 
 # ---- PROJECTS ----
