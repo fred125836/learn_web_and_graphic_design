@@ -113,8 +113,6 @@ with st.container():
     with right_column:
         st.empty()
 
-# ---- TITLE ----
-import streamlit as st
 
 st.markdown(
     """
