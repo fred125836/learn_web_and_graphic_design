@@ -26,7 +26,7 @@ with st.container():
     st.title("I am a Typist, Graphic Designer, and Forex Enthusiast from Nigeria")
     st.write("I am passionate about Web Development")
     st.write("you are welcome to my page")
-    st.link_button("_go to_ our payment :blue[website]", "https://wa.me/message/CL576QP54YBPP1")
+    st.link_button("Contact me on :blue[whatsapp]", "https://wa.me/message/CL576QP54YBPP1")
 
 # ---- PROJECTS ----
 with st.container():
