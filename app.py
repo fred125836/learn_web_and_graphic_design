@@ -9,7 +9,7 @@ st.set_page_config(page_title="Hello World", page_icon=":tada:")
 img_contact_form = Image.open("images/microsoft_office.jpeg")
 img_lottie_animation = Image.open("images/web_dev.png")
 
-st.link_button("_go to_ our payment :blue[website]", "https://wa.me/message/CL576QP54YBPP1")
+
 
 hide_streamlit_style = """
     <style>
@@ -26,6 +26,7 @@ with st.container():
     st.title("I am a Typist, Graphic Designer, and Forex Enthusiast from Nigeria")
     st.write("I am passionate about Web Development")
     st.write("you are welcome to my page")
+    st.link_button("_go to_ our payment :blue[website]", "https://wa.me/message/CL576QP54YBPP1")
 
 # ---- PROJECTS ----
 with st.container():
