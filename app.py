@@ -2,27 +2,16 @@ from PIL import Image
 import streamlit as st
 from datetime import datetime
 
-
-
-
 # find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Hello World", page_icon=":tada:")
-
-
 
 # ---- LOAD ASSETS ----
 img_contact_form = Image.open("images/microsoft_office.jpeg")
 img_lottie_animation = Image.open("images/web_dev.png")
-url = "https://wa.me/message/CL576QP54YBPP1"
+url = 
 
-# Create a button that acts as a link
-st.markdown(f"""
-    <a href="{url}" target="_blank">
-        <button style="padding:10px 20px; font-size:16px;">Go to Example</button>
-    </a>
-    """,
-    unsafe_allow_html=True
-)
+st.link_button("_go to_ our payment :blue[website]", "https://wa.me/message/CL576QP54YBPP1")
+
 hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
