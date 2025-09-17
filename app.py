@@ -84,6 +84,66 @@ with st.container():
     st.header("Get in touch with me")
     st.write("##")
 
+# Inject custom CSS using Markdown
+st.markdown("""
+    <style>
+    form {
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    form input:focus,
+    form textarea:focus {
+        border-color: #007bff;
+        outline: none;
+        background-color: #fff;
+    }
+
+    form textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+    }
+
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+        form {
+            padding: 20px;
+        }
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
+
     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
     contact_form = """
     <form action="https://formsubmit.co/jessicasmith22025@gmail.com" method="POST">
@@ -102,23 +162,9 @@ with st.container():
         st.empty()
 
 
-st.markdown(
-    """
-    <div style="
-        padding: 20px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-        width: fit-content;
-        margin: 20px auto;
-        text-align: center;
-    ">
-        <h3 style="margin: 0;">Box with Shadow</h3>
-        <p>This box has a shadow effect!</p>
-    </div>
-    """,
-    unsafe_allow_html=True
+
 )
+
 
 
 
