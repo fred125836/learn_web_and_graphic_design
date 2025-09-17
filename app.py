@@ -7,77 +7,6 @@ st.set_page_config(page_title="Hello World", page_icon=":tada:")
 
 import streamlit as st
 
-# Inject custom CSS using Markdown
-st.markdown("""
-    <style>
-    form {
-        max-width: 500px;
-        margin: 40px auto;
-        padding: 30px;
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        font-family: Arial, sans-serif;
-    }
-
-    form input,
-    form textarea,
-    form button {
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 12px 15px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
-
-    form input:focus,
-    form textarea:focus {
-        border-color: #007bff;
-        outline: none;
-        background-color: #fff;
-    }
-
-    form textarea {
-        resize: vertical;
-        min-height: 100px;
-    }
-
-    form button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        font-weight: bold;
-    }
-
-    form button:hover {
-        background-color: #0056b3;
-    }
-
-    @media (max-width: 600px) {
-        form {
-            padding: 20px;
-        }
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# Display the contact form
-st.markdown("""
-    <form action="https://formsubmit.co/jessicasmith22025@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message here" required></textarea>
-        <textarea name="schoolname" placeholder="Your school name here" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-""", unsafe_allow_html=True)
-
-
 # ---- LOAD ASSETS ----
 img_contact_form = Image.open("images/microsoft_office.jpeg")
 img_lottie_animation = Image.open("images/web_dev.png")
@@ -190,5 +119,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
